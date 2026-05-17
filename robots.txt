@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Essential crawlable resources
+Allow: /assets/
+Allow: /sitemap.xml
+Allow: /rss.xml
+Allow: /feed.xml
+Allow: /llms.txt
+
+# Prevent accidental indexation of temporary or system paths if present
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /backup/
+Disallow: /*?replytocom=
+Disallow: /*?utm_*
+
+Sitemap: https://apgujeonglounge.kr/sitemap.xml
