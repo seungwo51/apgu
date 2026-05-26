@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://apgujeonglounge.kr/</loc>
     <lastmod>2026-05-17</lastmod>
@@ -8,56 +7,56 @@
     <priority>1.00</priority>
     <image:image>
       <image:loc>https://apgujeonglounge.kr/assets/og-image.jpg</image:loc>
-      <image:title>압구정 클럽 라운지 | 컬러·하입·DM·코드 2026.05 정리</image:title>
-      <image:caption>2026.05 기준 가장 핫한 압구정 클럽 라운지는 컬러, 하입, DM, 코드, 코어(오픈예정)이 있습니다. 피크타임은 오전 12시부터 오전 04시 이며, 연령대는 20대 후반에서 30대 중반이 많습니다. 성비는 5:5로 관리 하며, 2차로 놀러오기 때문에 전체적인 텐션이나 분위기가 좋습니다.</image:caption>
+      <image:title>압구정 클럽 라운지 | 2026.05 기준 운영·가격·입장 가이드</image:title>
+      <image:caption>2026.05 기준 압구정 클럽·라운지 운영 여부, 컬러·하입·DM·코드·코어 정보, 연령대, 성비, 테이블·스탠딩, 게스트 입장 기준을 한 페이지에서 확인할 수 있는 메인 가이드입니다.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://apgujeonglounge.kr/apgujeong-club-guide</loc>
+    <loc>https://apgujeonglounge.kr/apgujeong-club-guide/</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.92</priority>
     <image:image>
       <image:loc>https://apgujeonglounge.kr/assets/apgujeong-club-guide-hero.webp</image:loc>
       <image:title>압구정 클럽 정리, 어디가 좋을까?</image:title>
-      <image:caption>2026.05 기준 압구정 클럽·라운지 선택 기준, 운영 여부, 컬러·하입·DM·코드 장단점, 테이블·입장 기준·복장·혼잡 시간 확인 포인트를 정리했습니다.</image:caption>
+      <image:caption>2026.05 기준 압구정 클럽 선택 기준, 운영 여부, 컬러·하입·DM·코드·코어 비교, 테이블 가격, 입장 기준, 복장, 혼잡 시간 확인 포인트를 정리했습니다.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://apgujeonglounge.kr/apgujeong-lounge-guide-2026</loc>
+    <loc>https://apgujeonglounge.kr/apgujeong-lounge-guide-2026/</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.92</priority>
     <image:image>
       <image:loc>https://apgujeonglounge.kr/assets/apgujeong-lounge-guide-2026-hero.webp</image:loc>
       <image:title>2026.05 압구정 라운지 정리, 어디가 좋을까?</image:title>
-      <image:caption>2026.05 기준 압구정 라운지 선택 기준, 운영 여부, DM·컬러·하입·코드 장단점, 테이블·입장 기준·복장·혼잡 시간 확인 포인트를 정리했습니다.</image:caption>
+      <image:caption>2026.05 기준 압구정 라운지 선택 기준, 운영 여부, DM·컬러·하입·코드·코어 정보, 테이블·입장 기준·복장·혼잡 시간 확인 포인트를 정리했습니다.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://apgujeonglounge.kr/apgujeong-lounge-club-2026</loc>
+    <loc>https://apgujeonglounge.kr/apgujeong-lounge-club-2026/</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
       <image:loc>https://apgujeonglounge.kr/assets/apgujeong-lounge-club-2026-hero.webp</image:loc>
       <image:title>압구정 라운지 클럽 2026.05 기준 정리</image:title>
-      <image:caption>2026년 5월 기준 압구정 라운지와 압구정 클럽 방문 전 확인할 운영 여부, 분위기, 가격·테이블, 입장 기준, 복장, 예약 팁을 정리했습니다.</image:caption>
+      <image:caption>2026.05 기준 압구정 라운지와 클럽 방문 전 확인할 운영 여부, 분위기, 가격·테이블, 입장 기준, 복장, 예약 전 확인사항을 정리했습니다.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://apgujeonglounge.kr/apgujeong-club-recommendation-2026</loc>
+    <loc>https://apgujeonglounge.kr/apgujeong-club-recommendation-2026/</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
       <image:loc>https://apgujeonglounge.kr/assets/apgujeong-club-recommendation-2026-hero.webp</image:loc>
       <image:title>압구정 클럽 추천, 2026.05 기준 운영 여부와 장단점 정리</image:title>
-      <image:caption>2026.05 기준 압구정 클럽 추천 정보를 운영 여부, 장단점, 입장 기준, 테이블 예약, FAQ 중심으로 정리했습니다. 가격·영업시간·입장 기준은 방문 전 공식 채널 확인이 필요합니다.</image:caption>
+      <image:caption>2026.05 기준 압구정 클럽 추천 정보를 운영 여부, 장단점, 입장 기준, 테이블 예약, FAQ 중심으로 정리했습니다. 가격·영업시간·입장 기준은 방문 전 재확인이 필요합니다.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://apgujeonglounge.kr/apgujeong-lounge-table</loc>
+    <loc>https://apgujeonglounge.kr/apgujeong-lounge-table/</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.86</priority>
@@ -68,7 +67,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://apgujeonglounge.kr/apgujeong-club-entry-guide</loc>
+    <loc>https://apgujeonglounge.kr/apgujeong-club-entry-guide/</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.84</priority>
@@ -79,7 +78,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://apgujeonglounge.kr/apgujeong-rodeo-club-review</loc>
+    <loc>https://apgujeonglounge.kr/apgujeong-rodeo-club-review/</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
