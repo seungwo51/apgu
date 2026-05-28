@@ -461,6 +461,394 @@ footer{padding:32px 0 44px;color:#9d8b72;text-align:center;border-top:1px solid 
       .club-head h2:after{animation:none!important}
     }
 
+
+
+    /* requested patch 2026-05-28: hero summary cards + social floating CTA */
+    .hero-fact-grid{
+      position:relative!important;
+      display:grid!important;
+      grid-template-columns:repeat(3,minmax(0,1fr))!important;
+      gap:12px!important;
+      align-items:stretch!important;
+      margin-top:28px!important;
+      max-width:860px!important;
+    }
+    .hero-fact-card,
+    .hero-fact-card.is-status{
+      position:relative!important;
+      display:flex!important;
+      align-items:flex-start!important;
+      justify-content:flex-start!important;
+      min-height:132px!important;
+      padding:18px 17px!important;
+      border:1px solid rgba(255,255,255,.18)!important;
+      border-radius:22px!important;
+      background:
+        linear-gradient(145deg,rgba(255,255,255,.105),rgba(255,255,255,.035) 38%,rgba(226,187,101,.075)),
+        radial-gradient(circle at 100% 0%,rgba(255,241,189,.15),transparent 16rem)!important;
+      box-shadow:
+        0 18px 44px rgba(0,0,0,.30),
+        inset 0 1px 0 rgba(255,255,255,.18),
+        inset 0 -1px 0 rgba(226,187,101,.12)!important;
+      backdrop-filter:blur(12px)!important;
+      -webkit-backdrop-filter:blur(12px)!important;
+      text-align:left!important;
+      overflow:hidden!important;
+    }
+    .hero-fact-card.is-status{
+      border-color:rgba(255,241,189,.34)!important;
+      background:
+        linear-gradient(145deg,rgba(255,241,189,.16),rgba(255,255,255,.055) 40%,rgba(201,44,53,.13)),
+        radial-gradient(circle at 0% 0%,rgba(226,187,101,.22),transparent 18rem)!important;
+    }
+    .hero-fact-card:before{
+      content:""!important;
+      position:absolute!important;
+      inset:0!important;
+      background:
+        linear-gradient(120deg,transparent 0%,rgba(255,255,255,.18) 44%,transparent 68%),
+        linear-gradient(180deg,rgba(255,255,255,.055),transparent 52%)!important;
+      transform:translateX(-120%)!important;
+      animation:heroCardSoftSweep 7s ease-in-out infinite!important;
+      animation-delay:calc(var(--i,0)*.18s)!important;
+      pointer-events:none!important;
+      opacity:.8!important;
+    }
+    .hero-fact-card:after{
+      content:attr(data-label)!important;
+      position:absolute!important;
+      right:13px!important;
+      bottom:11px!important;
+      z-index:1!important;
+      color:rgba(255,241,189,.46)!important;
+      font-size:11px!important;
+      font-weight:950!important;
+      letter-spacing:.16em!important;
+    }
+    .hero-fact-card .fact-mark{
+      position:relative!important;
+      z-index:2!important;
+      flex:0 0 auto!important;
+      display:inline-flex!important;
+      align-items:center!important;
+      justify-content:center!important;
+      width:34px!important;
+      height:34px!important;
+      margin:0 12px 0 0!important;
+      border:1px solid rgba(255,241,189,.42)!important;
+      border-radius:999px!important;
+      background:rgba(255,255,255,.105)!important;
+      color:#fff1bd!important;
+      font-size:12px!important;
+      font-weight:950!important;
+      line-height:1!important;
+      box-shadow:0 0 18px rgba(226,187,101,.16), inset 0 1px 0 rgba(255,255,255,.18)!important;
+    }
+    .hero-fact-card p,
+    .hero-fact-card.is-status p{
+      position:relative!important;
+      z-index:2!important;
+      margin:2px 0 0!important;
+      max-width:none!important;
+      color:#fff4dd!important;
+      font-size:clamp(14px,1.07vw,16px)!important;
+      font-weight:820!important;
+      line-height:1.52!important;
+      letter-spacing:-.035em!important;
+      text-align:left!important;
+      text-shadow:0 0 16px rgba(0,0,0,.18)!important;
+    }
+    .hero-fact-card p b{
+      color:#fff1bd!important;
+      font-weight:950!important;
+    }
+    .hero-fact-card p em{
+      display:inline-block!important;
+      margin-top:4px!important;
+      color:#ffffff!important;
+      font-style:normal!important;
+      font-weight:900!important;
+      letter-spacing:-.02em!important;
+    }
+    .hero-fact-card:hover{
+      transform:translateY(-2px)!important;
+      border-color:rgba(255,241,189,.44)!important;
+      box-shadow:0 22px 52px rgba(0,0,0,.34),0 0 24px rgba(226,187,101,.12),inset 0 1px 0 rgba(255,255,255,.20)!important;
+    }
+    @keyframes heroCardSoftSweep{
+      0%,58%{transform:translateX(-120%);opacity:0}
+      70%{opacity:.70}
+      100%{transform:translateX(120%);opacity:0}
+    }
+    .social-float-cta{
+      position:fixed;
+      right:18px;
+      bottom:calc(96px + var(--safe-bottom));
+      z-index:86;
+      display:grid;
+      grid-template-columns:repeat(2,48px);
+      gap:9px;
+      pointer-events:auto;
+    }
+    .social-float-btn{
+      width:48px;
+      height:48px;
+      display:grid;
+      place-items:center;
+      border:1px solid rgba(255,255,255,.42);
+      border-radius:999px;
+      background:rgba(255,255,255,.16);
+      color:rgba(255,255,255,.96);
+      box-shadow:0 14px 32px rgba(0,0,0,.30),inset 0 1px 0 rgba(255,255,255,.28);
+      backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
+      transition:transform .16s ease,border-color .16s ease,background .16s ease,box-shadow .16s ease;
+    }
+    .social-float-btn:hover,
+    .social-float-btn:focus-visible{
+      transform:translateY(-2px);
+      border-color:rgba(255,255,255,.72);
+      background:rgba(255,255,255,.24);
+      box-shadow:0 18px 38px rgba(0,0,0,.34),0 0 20px rgba(255,255,255,.12),inset 0 1px 0 rgba(255,255,255,.34);
+      outline:none;
+    }
+    .social-float-btn svg{
+      width:24px;
+      height:24px;
+      display:block;
+      fill:none;
+      stroke:currentColor;
+      stroke-width:2.2;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+    }
+    .social-float-btn .svg-fill{
+      fill:currentColor;
+      stroke:none;
+    }
+    .social-float-btn .naver-n{
+      color:#fff;
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:21px;
+      font-weight:950;
+      line-height:1;
+      letter-spacing:-.08em;
+      transform:translateX(-1px);
+    }
+    @media(max-width:860px){
+      .hero-fact-grid{
+        max-width:720px!important;
+      }
+    }
+    @media(max-width:560px){
+      .hero-fact-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr))!important;
+        gap:8px!important;
+        margin-top:18px!important;
+      }
+      .hero-fact-card,
+      .hero-fact-card.is-status{
+        min-height:104px!important;
+        padding:12px 10px 14px!important;
+        border-radius:17px!important;
+        flex-direction:column!important;
+        align-items:flex-start!important;
+      }
+      .hero-fact-card .fact-mark{
+        width:26px!important;
+        height:26px!important;
+        margin:0 0 8px 0!important;
+        font-size:10px!important;
+      }
+      .hero-fact-card p,
+      .hero-fact-card.is-status p{
+        font-size:clamp(11.5px,3.15vw,13px)!important;
+        line-height:1.36!important;
+        letter-spacing:-.045em!important;
+      }
+      .hero-fact-card:after{
+        right:9px!important;
+        bottom:8px!important;
+        font-size:9.5px!important;
+        letter-spacing:.12em!important;
+      }
+      .social-float-cta{
+        right:12px;
+        bottom:calc(82px + var(--safe-bottom));
+        grid-template-columns:repeat(2,42px);
+        gap:7px;
+      }
+      .social-float-btn{
+        width:42px;
+        height:42px;
+      }
+      .social-float-btn svg{
+        width:21px;
+        height:21px;
+      }
+      .social-float-btn .naver-n{
+        font-size:19px;
+      }
+    }
+    @media(prefers-reduced-motion:reduce){
+      .hero-fact-card:before{animation:none!important}
+      .social-float-btn{transition:none!important}
+    }
+
+
+    /* final desktop/layout patch: social CTA one-line + desktop hero balance */
+    .social-float-cta{
+      display:flex!important;
+      grid-template-columns:none!important;
+      grid-auto-flow:column!important;
+      flex-direction:row!important;
+      align-items:center!important;
+      justify-content:flex-end!important;
+      gap:8px!important;
+      width:auto!important;
+    }
+    @media(min-width:861px){
+      .hero-shell{
+        grid-template-columns:minmax(560px,1.08fr) minmax(420px,.92fr)!important;
+        gap:36px!important;
+        align-items:center!important;
+      }
+      .hero-media{
+        order:1!important;
+        align-self:center!important;
+        min-height:auto!important;
+      }
+      .hero-copy{
+        order:2!important;
+        text-align:left!important;
+      }
+      .hero-copy:after{
+        width:180px!important;
+        margin:22px 0 0!important;
+      }
+      .hero-fact-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr))!important;
+        max-width:none!important;
+        margin-top:24px!important;
+        gap:10px!important;
+      }
+      .hero-fact-card,
+      .hero-fact-card.is-status{
+        min-height:106px!important;
+        padding:15px 14px!important;
+        border-radius:19px!important;
+      }
+      .hero-fact-card .fact-mark{
+        width:30px!important;
+        height:30px!important;
+        margin:0 10px 0 0!important;
+        font-size:11px!important;
+      }
+      .hero-fact-card p,
+      .hero-fact-card.is-status p{
+        font-size:clamp(12.8px,.92vw,14.3px)!important;
+        line-height:1.43!important;
+        letter-spacing:-.04em!important;
+      }
+      .hero-fact-card:after{
+        right:11px!important;
+        bottom:9px!important;
+        font-size:10px!important;
+        letter-spacing:.12em!important;
+      }
+      .hero-carousel .carousel-viewport{
+        aspect-ratio:4/3!important;
+        max-height:600px!important;
+      }
+      .hero-media h2{
+        text-align:left!important;
+        font-size:18px!important;
+      }
+    }
+    @media(min-width:1180px){
+      .hero-shell{
+        grid-template-columns:minmax(620px,1.1fr) minmax(480px,.9fr)!important;
+        gap:44px!important;
+      }
+      .hero-carousel .carousel-viewport{
+        max-height:620px!important;
+      }
+    }
+    @media(max-width:560px){
+      .social-float-cta{
+        grid-template-columns:none!important;
+        display:flex!important;
+        flex-direction:row!important;
+        gap:7px!important;
+        right:12px!important;
+        bottom:calc(82px + var(--safe-bottom))!important;
+      }
+    }
+
+
+    /* final requested patch: social CTA vertical only */
+    .social-float-cta{
+      display:flex!important;
+      flex-direction:column!important;
+      grid-template-columns:none!important;
+      grid-auto-flow:row!important;
+      align-items:center!important;
+      justify-content:flex-end!important;
+      gap:8px!important;
+      width:auto!important;
+    }
+    @media(max-width:560px){
+      .social-float-cta{
+        display:flex!important;
+        flex-direction:column!important;
+        grid-template-columns:none!important;
+        grid-auto-flow:row!important;
+        gap:7px!important;
+        right:12px!important;
+        bottom:calc(82px + var(--safe-bottom))!important;
+      }
+    }
+
+
+
+    /* final requested patch: non-functional OPEN status in header */
+    .open-status{
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      min-height:40px;
+      padding:0 14px;
+      border:1px solid rgba(51,209,122,.36);
+      border-radius:999px;
+      background:rgba(51,209,122,.08);
+      color:#eafff3;
+      font-size:12px;
+      font-weight:950;
+      letter-spacing:.14em;
+      user-select:none;
+      pointer-events:none;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 0 18px rgba(51,209,122,.10);
+    }
+    .open-status-dot{
+      width:8px;
+      height:8px;
+      border-radius:999px;
+      background:var(--green);
+      box-shadow:0 0 13px var(--green),0 0 22px rgba(51,209,122,.48);
+    }
+    @media(max-width:560px){
+      .open-status{
+        min-height:34px;
+        padding:0 11px;
+        gap:7px;
+        font-size:11px;
+      }
+      .open-status-dot{
+        width:7px;
+        height:7px;
+      }
+    }
 </style>
 </head>
 <body>
@@ -471,7 +859,7 @@ footer{padding:32px 0 44px;color:#9d8b72;text-align:center;border-top:1px solid 
 <span><strong>APGUJEONG</strong><span>CLUB · LOUNGE</span></span>
 </a>
 <div aria-label="상단 업장 바로가기" class="header-actions">
-<button aria-controls="drawer" aria-expanded="false" class="menu-btn" id="menuOpen" type="button"><span aria-hidden="true" class="menu-lines"><i></i><i></i><i></i></span>업장</button>
+<span aria-label="영업 상태 OPEN" class="open-status"><span aria-hidden="true" class="open-status-dot"></span><span>OPEN</span></span>
 <nav aria-label="압구정 업장 바로가기" class="top-quick-nav">
 <a href="#club-color">컬러</a>
 <a href="#club-core">코어</a>
@@ -503,12 +891,12 @@ footer{padding:32px 0 44px;color:#9d8b72;text-align:center;border-top:1px solid 
 <div class="hero-copy">
 <h1 id="main-title">압구정 클럽</h1>
 <div aria-label="압구정 클럽 핵심 요약" class="hero-fact-grid">
-<article class="hero-fact-card is-status"><p><b>2026.05 기준 운영중</b> 컬러, 하입, DM, 코드, 코어</p></article>
-<article class="hero-fact-card"><p>연령대는 20대 후반에서 30대 초중반이 가장 많습니다.</p></article>
-<article class="hero-fact-card"><p>클럽 내 성비는 5:5 또는 6:4 정도로 유지합니다.</p></article>
-<article class="hero-fact-card"><p>테이블은 24시간 실시간 낙찰제로 현장 비딩이나 예약이 어렵습니다.</p></article>
-<article class="hero-fact-card"><p>타 지역이나 클럽에 비해 일반인 분들이 많습니다.</p></article>
-<article class="hero-fact-card"><p>남자는 게스트 입장이 어려울 수 있고 여성분들은 무료 입장과 잔술, 빠바틀이 가능합니다.</p></article>
+<article class="hero-fact-card is-status" data-label="운영"><span class="fact-mark" aria-hidden="true">01</span><p><b>2026.05 기준 운영중</b><br/><em>컬러, 하입, DM, 코드, 코어</em></p></article>
+<article class="hero-fact-card" data-label="연령"><span class="fact-mark" aria-hidden="true">02</span><p>연령대는 20대 후반에서 30대 초중반이 가장 많습니다.</p></article>
+<article class="hero-fact-card" data-label="성비"><span class="fact-mark" aria-hidden="true">03</span><p>클럽 내 성비는 5:5 또는 6:4 정도로 유지합니다.</p></article>
+<article class="hero-fact-card" data-label="테이블"><span class="fact-mark" aria-hidden="true">04</span><p>테이블은 24시간 실시간 낙찰제로 현장 비딩이나 예약이 어렵습니다.</p></article>
+<article class="hero-fact-card" data-label="분위기"><span class="fact-mark" aria-hidden="true">05</span><p>타 지역이나 클럽에 비해 일반인 분들이 많습니다.</p></article>
+<article class="hero-fact-card" data-label="게스트"><span class="fact-mark" aria-hidden="true">06</span><p>남자는 게스트 입장이 어려울 수 있고 여성분들은 무료 입장과 잔술, 빠바틀이 가능합니다.</p></article>
 </div>
 </div>
 <div class="hero-media">
@@ -612,7 +1000,7 @@ footer{padding:32px 0 44px;color:#9d8b72;text-align:center;border-top:1px solid 
 </section>
 <section aria-labelledby="club-hype-title" class="club-section" id="club-hype">
 <div class="wrap"><div class="club-shell">
-<div class="club-head"><div><h2 id="club-hype-title">압구정 클럽 하</h2><p>압구정 로데오에서 가장 오래된 명실상부 NO.1 하입입니다. 안정적인 운영감과 익숙한 동선으로 단체 방문과 2차 방문 모두에 적합합니다.</p></div></div>
+<div class="club-head"><div><h2 id="club-hype-title">압구정 클럽 하입</h2><p>압구정 로데오에서 가장 오래된 명실상부 NO.1 하입입니다. 안정적인 운영감과 익숙한 동선으로 단체 방문과 2차 방문 모두에 적합합니다.</p></div></div>
 <div class="club-summary"><article><b>테이블</b><strong>80만원 ~</strong></article><article><b>스탠딩</b><strong>30만원 ~</strong></article><article><b>게스트</b><strong>남성불가, 여성가능</strong></article><article><b>주소</b><strong>서울 강남구 선릉로157길 16 지하1층</strong></article></div>
 <div class="media-grid">
 <div class="media-panel unified-photo-panel"><h3>맵·가격표(사진)</h3><div aria-label="하입 맵·가격표 사진 슬라이드" class="carousel unified-carousel"><div class="carousel-viewport"><div class="carousel-track">
@@ -660,6 +1048,13 @@ footer{padding:32px 0 44px;color:#9d8b72;text-align:center;border-top:1px solid 
 <footer>
 <div class="wrap"><img alt="AP 압구정 로고" height="512" loading="lazy" src="assets/favicon.png" width="512"/><p><b>APGUJEONG LOUNGE &amp; CLUB · 2026.05</b></p><p>압구정 클럽 · 압구정 · 컬러 · 코어 · DM · 코드 · 하입</p><p>담당 매니저 신우 · 010 – 2646 – 0270</p><p>© APGUJEONG LOUNGE &amp; CLUB. All rights reserved.</p></div>
 </footer>
+
+<nav aria-label="소셜 채널 바로가기" class="social-float-cta">
+<a aria-label="네이버 블로그 바로가기" class="social-float-btn social-naver" href="https://blog.naver.com/ssh_official/224298418827" rel="noopener noreferrer" target="_blank"><span aria-hidden="true" class="naver-n">N</span><span class="sr-only">블로그</span></a>
+<a aria-label="유튜브 바로가기" class="social-float-btn social-youtube" href="https://www.youtube.com/@ap_clublounge" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="4.8" y="6.2" width="14.4" height="11.6" rx="3.2"/><path class="svg-fill" d="M10.2 8.9v6.2l5.1-3.1z"/></svg><span class="sr-only">유튜브</span></a>
+<a aria-label="틱톡 바로가기" class="social-float-btn social-tiktok" href="https://www.tiktok.com/@the.seoul.club?_r=1&amp;_t=ZS-96jjA8Eh7Qb" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5v8.2a4.2 4.2 0 1 1-3.05-4.04"/><path d="M14 5c.65 2.65 2.2 4.05 4.65 4.38"/></svg><span class="sr-only">틱톡</span></a>
+<a aria-label="인스타그램 바로가기" class="social-float-btn social-instagram" href="https://www.instagram.com/ap_clublounge?igsh=MXE3MG93OGgwcDY1Mw==" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="4"/><circle cx="12" cy="12" r="3.2"/><circle class="svg-fill" cx="16.5" cy="7.6" r="1.1"/></svg><span class="sr-only">인스타그램</span></a>
+</nav>
 <div aria-label="하단 고정 예약 문의" class="fixed-cta">
 <div class="fixed-cta-inner">
 <a aria-label="압구정 카카오톡 문의" class="kakao" href="https://open.kakao.com/o/sU6GYIwi" rel="noopener" target="_blank"><span aria-hidden="true">K</span><span class="cta-label">카카오톡 문의<small>담당 매니저 신우</small></span></a>
@@ -672,11 +1067,13 @@ footer{padding:32px 0 44px;color:#9d8b72;text-align:center;border-top:1px solid 
       const openBtn=document.getElementById('menuOpen');
       const closeBtn=document.getElementById('menuClose');
       const backdrop=document.getElementById('drawerBackdrop');
-      function openMenu(){drawer.setAttribute('aria-hidden','false');openBtn.setAttribute('aria-expanded','true');backdrop.classList.add('active');}
-      function closeMenu(){drawer.setAttribute('aria-hidden','true');openBtn.setAttribute('aria-expanded','false');backdrop.classList.remove('active');}
-      openBtn.addEventListener('click',openMenu); closeBtn.addEventListener('click',closeMenu); backdrop.addEventListener('click',closeMenu);
-      drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
-      document.addEventListener('keydown',e=>{if(e.key==='Escape') closeMenu();});
+      if(drawer && openBtn && closeBtn && backdrop){
+        function openMenu(){drawer.setAttribute('aria-hidden','false');openBtn.setAttribute('aria-expanded','true');backdrop.classList.add('active');}
+        function closeMenu(){drawer.setAttribute('aria-hidden','true');openBtn.setAttribute('aria-expanded','false');backdrop.classList.remove('active');}
+        openBtn.addEventListener('click',openMenu); closeBtn.addEventListener('click',closeMenu); backdrop.addEventListener('click',closeMenu);
+        drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+        document.addEventListener('keydown',e=>{if(e.key==='Escape') closeMenu();});
+      }
 
       function initCarousel(root){
         const track=root.querySelector('.carousel-track');
