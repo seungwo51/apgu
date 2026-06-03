@@ -1,98 +1,29 @@
-# robots.txt — apgujeonglounge / https://apgujeonglounge.kr/
-# 목적: 네이버·구글 검색수집, 이미지 렌더링, AI 검색·답변 인용 접근 허용
-# 배포 위치: https://apgujeonglounge.kr/robots.txt
-# 기준 URL: https://apgujeonglounge.kr/
+# robots.txt — https://apgujeonglounge.kr/
+# Public SEO crawl policy for Google, Naver, and other compliant search crawlers.
+# Upload this file to the site root: https://apgujeonglounge.kr/robots.txt
 
 User-agent: *
 Allow: /
-Allow: /assets/
+Disallow: /README.md
+Disallow: /README.txt
 
-# Google Search / Images
 User-agent: Googlebot
 Allow: /
-Allow: /assets/
+Disallow: /README.md
+Disallow: /README.txt
 
 User-agent: Googlebot-Image
 Allow: /
 Allow: /assets/
+Disallow: /README.md
+Disallow: /README.txt
 
-User-agent: Googlebot-Mobile
-Allow: /
-Allow: /assets/
-
-# Naver Search
 User-agent: Yeti
 Allow: /
 Allow: /assets/
-
-# Other search engines
-User-agent: Bingbot
-Allow: /
-Allow: /assets/
-
-User-agent: DuckDuckBot
-Allow: /
-Allow: /assets/
-
-User-agent: Daumoa
-Allow: /
-Allow: /assets/
-
-User-agent: Applebot
-Allow: /
-Allow: /assets/
-
-# AI search / answer engines / LLM crawlers
-User-agent: OAI-SearchBot
-Allow: /
-Allow: /assets/
-
-User-agent: ChatGPT-User
-Allow: /
-Allow: /assets/
-
-User-agent: GPTBot
-Allow: /
-Allow: /assets/
-
-User-agent: ClaudeBot
-Allow: /
-Allow: /assets/
-
-User-agent: Claude-User
-Allow: /
-Allow: /assets/
-
-User-agent: Claude-SearchBot
-Allow: /
-Allow: /assets/
-
-User-agent: PerplexityBot
-Allow: /
-Allow: /assets/
-
-User-agent: Perplexity-User
-Allow: /
-Allow: /assets/
-
-User-agent: CCBot
-Allow: /
-Allow: /assets/
-
-User-agent: Google-Extended
-Allow: /
-Allow: /assets/
-
-User-agent: Amazonbot
-Allow: /
-Allow: /assets/
-
-User-agent: FacebookBot
-Allow: /
-Allow: /assets/
-
-User-agent: meta-externalagent
-Allow: /
-Allow: /assets/
+Disallow: /README.md
+Disallow: /README.txt
 
 Sitemap: https://apgujeonglounge.kr/sitemap.xml
+Sitemap: https://apgujeonglounge.kr/rss.xml
+Sitemap: https://apgujeonglounge.kr/feed.xml

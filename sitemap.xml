@@ -2,90 +2,101 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://apgujeonglounge.kr/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-06-03T05:13:22+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
     <image:image>
       <image:loc>https://apgujeonglounge.kr/assets/og-image.jpg</image:loc>
-      <image:title>압구정 클럽 라운지 | 2026.05 기준 운영·가격·입장 가이드</image:title>
-      <image:caption>2026.05 기준 압구정 클럽·라운지 운영 여부, 컬러·하입·DM·코드·코어 정보, 연령대, 성비, 테이블·스탠딩, 게스트 입장 기준을 한 페이지에서 확인할 수 있는 메인 가이드입니다.</image:caption>
+      <image:title>압구정 클럽 | 추천, 입뺀, 테이블, 가격, 특징, 게스트 입장 요약</image:title>
+      <image:caption>압구정 클럽 메인 가이드. 컬러·코어·DM·코드·하입 운영 여부, 연령대, 성비, 테이블 가격, 입장 기준, 게스트 문의 기준을 한 페이지에서 정리합니다.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://apgujeonglounge.kr/apgujeong-club-guide/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <loc>https://apgujeonglounge.kr/apgujeong-club-lounge</loc>
+    <lastmod>2026-06-03T05:13:22+09:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
+    <priority>0.94</priority>
     <image:image>
-      <image:loc>https://apgujeonglounge.kr/assets/apgujeong-club-guide-hero.webp</image:loc>
-      <image:title>압구정 클럽 정리, 어디가 좋을까?</image:title>
-      <image:caption>2026.05 기준 압구정 클럽 선택 기준, 운영 여부, 컬러·하입·DM·코드·코어 비교, 테이블 가격, 입장 기준, 복장, 혼잡 시간 확인 포인트를 정리했습니다.</image:caption>
+      <image:loc>https://apgujeonglounge.kr/assets/main-photos/apgujeong-club-lounge.webp</image:loc>
+      <image:title>압구정 클럽 라운지</image:title>
+      <image:caption>2026년 6월 기준 압구정 클럽 라운지 운영 업장, 음악 장르, 핫플 선택 기준, 게스트·테이블·입장 전 확인사항을 정리합니다.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://apgujeonglounge.kr/apgujeong-lounge-guide-2026/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <loc>https://apgujeonglounge.kr/apgujeong-club-recommend</loc>
+    <lastmod>2026-06-03T05:13:22+09:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
+    <priority>0.96</priority>
     <image:image>
-      <image:loc>https://apgujeonglounge.kr/assets/apgujeong-lounge-guide-2026-hero.webp</image:loc>
-      <image:title>2026.05 압구정 라운지 정리, 어디가 좋을까?</image:title>
-      <image:caption>2026.05 기준 압구정 라운지 선택 기준, 운영 여부, DM·컬러·하입·코드·코어 정보, 테이블·입장 기준·복장·혼잡 시간 확인 포인트를 정리했습니다.</image:caption>
+      <image:loc>https://apgujeonglounge.kr/assets/main-photos/apgujeong-club-recommend.webp</image:loc>
+      <image:title>압구정 클럽 추천</image:title>
+      <image:caption>압구정 클럽 추천 기준을 유동인구, 운영 중 업장, 음악 장르, 피크타임, 드레스코드, 테이블·게스트 조건 중심으로 정리합니다.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://apgujeonglounge.kr/apgujeong-lounge-club-2026/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <loc>https://apgujeonglounge.kr/apgujeong-club-entry-denial</loc>
+    <lastmod>2026-06-03T05:13:22+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://apgujeonglounge.kr/assets/apgujeong-lounge-club-2026-hero.webp</image:loc>
-      <image:title>압구정 라운지 클럽 2026.05 기준 정리</image:title>
-      <image:caption>2026.05 기준 압구정 라운지와 클럽 방문 전 확인할 운영 여부, 분위기, 가격·테이블, 입장 기준, 복장, 예약 전 확인사항을 정리했습니다.</image:caption>
+      <image:loc>https://apgujeonglounge.kr/assets/main-photos/apgujeong-club-entry-denial.webp</image:loc>
+      <image:title>압구정 클럽 입뺀</image:title>
+      <image:caption>압구정 클럽 입뺀 사유와 줄이는 방법을 신분증, 드레스코드, 만취·소란, 동행자 문제, 현장 혼잡 기준으로 정리합니다.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://apgujeonglounge.kr/apgujeong-club-recommendation-2026/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <loc>https://apgujeonglounge.kr/apgujeong-club-entry-fee</loc>
+    <lastmod>2026-06-03T05:13:22+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://apgujeonglounge.kr/assets/main-photos/apgujeong-club-entry-fee.webp</image:loc>
+      <image:title>압구정 클럽 입장료</image:title>
+      <image:caption>압구정 클럽 입장료, 여성 게스트 무료 입장, 남성 테이블 예약, 코트체크 비용, 입장 제한 복장 기준을 정리합니다.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://apgujeonglounge.kr/apgujeong-club-review</loc>
+    <lastmod>2026-06-03T05:13:22+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
-      <image:loc>https://apgujeonglounge.kr/assets/apgujeong-club-recommendation-2026-hero.webp</image:loc>
-      <image:title>압구정 클럽 추천, 2026.05 기준 운영 여부와 장단점 정리</image:title>
-      <image:caption>2026.05 기준 압구정 클럽 추천 정보를 운영 여부, 장단점, 입장 기준, 테이블 예약, FAQ 중심으로 정리했습니다. 가격·영업시간·입장 기준은 방문 전 재확인이 필요합니다.</image:caption>
+      <image:loc>https://apgujeonglounge.kr/assets/main-photos/apgujeong-club-review.webp</image:loc>
+      <image:title>압구정 클럽 후기</image:title>
+      <image:caption>압구정 클럽 후기 검색자가 확인할 핫플 기준, 음악 장르, 게스트 가능 여부, 테이블 예약, 피크타임과 방문 전 체크사항을 정리합니다.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://apgujeonglounge.kr/apgujeong-lounge-table/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <loc>https://apgujeonglounge.kr/apgujeong-club-alone</loc>
+    <lastmod>2026-06-03T05:13:22+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.86</priority>
     <image:image>
-      <image:loc>https://apgujeonglounge.kr/assets/apgujeong-lounge-table-hero.webp</image:loc>
-      <image:title>압구정 라운지 테이블, 가격, 조각, 주의사항 정리</image:title>
-      <image:caption>압구정 라운지 테이블 가격, 조각 모임, 예약 기준, 장단점, 입장 제한과 방문 전 주의사항을 확인 기준 중심으로 정리한 가이드입니다.</image:caption>
+      <image:loc>https://apgujeonglounge.kr/assets/main-photos/apgujeong-club-alone.webp</image:loc>
+      <image:title>압구정 클럽 혼자</image:title>
+      <image:caption>압구정 클럽 혼자 방문 가능 여부, 혼자 가기 좋은 시간대, 게스트 신청, 귀가 동선과 소지품 관리 기준을 정리합니다.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://apgujeonglounge.kr/apgujeong-club-entry-guide/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <loc>https://apgujeonglounge.kr/apgujeong-club-guest</loc>
+    <lastmod>2026-06-03T05:13:22+09:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.84</priority>
+    <priority>0.92</priority>
     <image:image>
-      <image:loc>https://apgujeonglounge.kr/assets/apgujeong-club-entry-guide-hero.webp</image:loc>
-      <image:title>압구정 클럽 입뺀, 기준과 줄이는 법 정리</image:title>
-      <image:caption>압구정 클럽 입뺀 기준을 신분증, 성인 확인, 복장, 혼잡도, 예약 여부 중심으로 정리한 방문 전 체크리스트입니다. 확인되지 않은 가격과 입장 기준은 단정하지 않습니다.</image:caption>
+      <image:loc>https://apgujeonglounge.kr/assets/main-photos/apgujeong-club-guest.webp</image:loc>
+      <image:title>압구정 클럽 게스트</image:title>
+      <image:caption>압구정 클럽 게스트 입장 가능 업장, 신청 방법, 여자·남자 게스트 차이, 무료입장·잔술·빠바틀 혜택과 테이블 예약 차이를 정리합니다.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://apgujeonglounge.kr/apgujeong-rodeo-club-review/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <loc>https://apgujeonglounge.kr/apgujeong-club-table</loc>
+    <lastmod>2026-06-03T05:13:22+09:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.94</priority>
     <image:image>
-      <image:loc>https://apgujeonglounge.kr/assets/apgujeong-rodeo-club-review-hero.webp</image:loc>
-      <image:title>압구정 로데오 클럽 후기, 추천 전 확인할 기준 정리</image:title>
-      <image:caption>압구정 로데오 클럽 후기를 바탕으로 추천 기준, 라운지와 클럽 차이, 입장 기준, 복장, 예약, 테이블 문의 전 확인할 사항을 정리한 방문 전 가이드입니다.</image:caption>
+      <image:loc>https://apgujeonglounge.kr/assets/main-photos/apgujeong-club-table.webp</image:loc>
+      <image:title>압구정 클럽 테이블</image:title>
+      <image:caption>압구정 클럽 테이블 가격대, 바틀 구성, 스탠딩·일반·룸 차이, 예약금·환불, 당일 예약과 좋은 자리 배정 기준을 정리합니다.</image:caption>
     </image:image>
   </url>
 </urlset>
