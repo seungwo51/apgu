@@ -849,8 +849,417 @@ footer{padding:32px 0 44px;color:#9d8b72;text-align:center;border-top:1px solid 
         height:7px;
       }
     }
+
+
+/* requested-final-patch: related title, social CTA parity, subpage visual development */
+.related-pages-head,
+.subpage-shortcuts .section-head{
+  margin:0 0 18px!important;
+  text-align:left!important;
+}
+.related-pages-head .eyebrow,
+.subpage-shortcuts .section-head .eyebrow{
+  margin:0 0 8px!important;
+  color:var(--gold)!important;
+  font-size:12px!important;
+  font-weight:950!important;
+  letter-spacing:.22em!important;
+  text-transform:uppercase!important;
+}
+.related-pages-head h2,
+.subpage-shortcuts .section-head h2{
+  margin:0!important;
+  color:#fffaf1!important;
+  font-family:Georgia,"Noto Serif KR",serif!important;
+  font-size:clamp(30px,5.6vw,50px)!important;
+  line-height:1.05!important;
+  letter-spacing:-.045em!important;
+  text-shadow:0 0 24px rgba(226,187,101,.14)!important;
+}
+.subpage-shortcuts{
+  padding:34px 0 26px!important;
+  border-top:1px solid rgba(226,187,101,.16)!important;
+}
+.subpage-link-grid{
+  display:grid!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:10px!important;
+}
+.subpage-link-card{
+  min-height:82px!important;
+  border:1px solid rgba(226,187,101,.32)!important;
+  border-radius:19px!important;
+  background:linear-gradient(145deg,rgba(255,241,189,.12),rgba(255,255,255,.04) 44%,rgba(59,11,20,.30))!important;
+  color:#fff4d2!important;
+  box-shadow:0 18px 42px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.08)!important;
+  font-weight:950!important;
+}
+.content-card blockquote{
+  border-left:4px solid var(--gold)!important;
+  background:linear-gradient(135deg,rgba(226,187,101,.10),rgba(255,255,255,.045) 58%,rgba(59,11,20,.22))!important;
+  color:#fff1bd!important;
+}
+.content-card h2{
+  padding-top:6px!important;
+}
+.content-card h2:not(:first-child){
+  border-top:1px solid rgba(226,187,101,.12)!important;
+}
+.content-card table{
+  table-layout:auto!important;
+  border-spacing:0!important;
+  background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.028))!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 16px 38px rgba(0,0,0,.20)!important;
+}
+.content-card th,
+.content-card td{
+  padding:15px 16px!important;
+  line-height:1.62!important;
+}
+.content-card th{
+  color:#fff1bd!important;
+  background:rgba(226,187,101,.10)!important;
+  white-space:nowrap!important;
+}
+.content-card td strong,
+.content-card th strong{
+  display:block!important;
+  margin-bottom:4px!important;
+  color:#fffaf1!important;
+  font-weight:950!important;
+}
+.content-card .cell-main{
+  display:block!important;
+  color:#fffaf1!important;
+  font-weight:950!important;
+  line-height:1.45!important;
+}
+.content-card .cell-sub{
+  display:block!important;
+  margin-top:5px!important;
+  color:#cdbda5!important;
+  font-size:13px!important;
+  line-height:1.55!important;
+  font-weight:700!important;
+}
+.content-card .compact-list{
+  display:grid!important;
+  grid-template-columns:1fr!important;
+  gap:8px!important;
+  margin:0!important;
+  padding:0!important;
+  list-style:none!important;
+}
+.content-card .compact-list li{
+  min-height:auto!important;
+  padding:10px 12px!important;
+  border:1px solid rgba(226,187,101,.16)!important;
+  border-radius:13px!important;
+  background:rgba(255,255,255,.04)!important;
+  color:#e9dcc8!important;
+  font-weight:800!important;
+}
+.social-float-cta{
+  position:fixed!important;
+  right:18px!important;
+  bottom:calc(96px + var(--safe-bottom))!important;
+  top:auto!important;
+  transform:none!important;
+  z-index:86!important;
+  display:flex!important;
+  flex-direction:column!important;
+  grid-template-columns:none!important;
+  grid-auto-flow:row!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:8px!important;
+  width:auto!important;
+  pointer-events:auto!important;
+}
+.social-float-btn,
+.social-float-btn.social-naver,
+.social-float-btn.social-youtube,
+.social-float-btn.social-tiktok,
+.social-float-btn.social-instagram{
+  width:48px!important;
+  height:48px!important;
+  display:grid!important;
+  place-items:center!important;
+  border:1px solid rgba(255,255,255,.42)!important;
+  border-radius:999px!important;
+  background:rgba(255,255,255,.16)!important;
+  color:rgba(255,255,255,.96)!important;
+  box-shadow:0 14px 32px rgba(0,0,0,.30),inset 0 1px 0 rgba(255,255,255,.28)!important;
+  backdrop-filter:blur(14px)!important;
+  -webkit-backdrop-filter:blur(14px)!important;
+  transition:transform .16s ease,border-color .16s ease,background .16s ease,box-shadow .16s ease!important;
+}
+.social-float-btn:hover,
+.social-float-btn:focus-visible{
+  transform:translateY(-2px)!important;
+  border-color:rgba(255,255,255,.72)!important;
+  background:rgba(255,255,255,.24)!important;
+  box-shadow:0 18px 38px rgba(0,0,0,.34),0 0 20px rgba(255,255,255,.12),inset 0 1px 0 rgba(255,255,255,.34)!important;
+  outline:none!important;
+}
+.social-float-btn svg{
+  width:24px!important;
+  height:24px!important;
+  display:block!important;
+  fill:none!important;
+  stroke:currentColor!important;
+  stroke-width:2.2!important;
+  stroke-linecap:round!important;
+  stroke-linejoin:round!important;
+}
+.social-float-btn .svg-fill{fill:currentColor!important;stroke:none!important;}
+.social-float-btn .naver-n{
+  color:#fff!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:21px!important;
+  font-weight:950!important;
+  line-height:1!important;
+  letter-spacing:-.08em!important;
+  transform:translateX(-1px)!important;
+}
+@media(max-width:760px){
+  .subpage-link-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+  .subpage-link-card{min-height:68px!important;}
+}
+@media(max-width:560px){
+  .social-float-cta{
+    display:flex!important;
+    flex-direction:column!important;
+    right:12px!important;
+    bottom:calc(82px + var(--safe-bottom))!important;
+    gap:7px!important;
+  }
+  .social-float-btn,
+  .social-float-btn.social-naver,
+  .social-float-btn.social-youtube,
+  .social-float-btn.social-tiktok,
+  .social-float-btn.social-instagram{
+    width:42px!important;
+    height:42px!important;
+  }
+  .social-float-btn svg{width:21px!important;height:21px!important;}
+  .social-float-btn .naver-n{font-size:19px!important;}
+  .content-card th,.content-card td{padding:12px 10px!important;font-size:13px!important;}
+  .related-pages-head h2,.subpage-shortcuts .section-head h2{font-size:clamp(27px,8vw,38px)!important;}
+}
+
 </style>
-</head>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": "https://apgujeonglounge.kr/#subpage-list",
+  "name": "압구정 클럽 세부 안내 페이지",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "압구정 클럽 라운지",
+      "url": "https://apgujeonglounge.kr/apgujeong-club-lounge"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "압구정 클럽 추천",
+      "url": "https://apgujeonglounge.kr/apgujeong-club-recommend"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "압구정 클럽 입뺀",
+      "url": "https://apgujeonglounge.kr/apgujeong-club-entry-denial"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "압구정 클럽 입장료",
+      "url": "https://apgujeonglounge.kr/apgujeong-club-entry-fee"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "압구정 클럽 후기",
+      "url": "https://apgujeonglounge.kr/apgujeong-club-review"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "압구정 클럽 혼자",
+      "url": "https://apgujeonglounge.kr/apgujeong-club-alone"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "압구정 클럽 게스트",
+      "url": "https://apgujeonglounge.kr/apgujeong-club-guest"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "압구정 클럽 테이블",
+      "url": "https://apgujeonglounge.kr/apgujeong-club-table"
+    }
+  ]
+}</script><style>
+/* visible-final-patch-20260603: related title + right-bottom social CTA + content/table development */
+.related-pages-head,
+.subpage-shortcuts .section-head{
+  margin:0 0 20px!important;
+  text-align:left!important;
+}
+.related-pages-head .eyebrow,
+.subpage-shortcuts .section-head .eyebrow{
+  display:block!important;
+  margin:0 0 8px!important;
+  color:var(--gold,#e2bb65)!important;
+  font-size:12px!important;
+  font-weight:950!important;
+  letter-spacing:.22em!important;
+  line-height:1.1!important;
+  text-transform:uppercase!important;
+}
+.related-pages-head h2,
+.subpage-shortcuts .section-head h2{
+  display:block!important;
+  margin:0!important;
+  color:#fffaf1!important;
+  font-family:Georgia,"Noto Serif KR",serif!important;
+  font-size:clamp(30px,6vw,50px)!important;
+  line-height:1.05!important;
+  letter-spacing:-.045em!important;
+  text-shadow:0 0 24px rgba(226,187,101,.16)!important;
+}
+.subpage-shortcuts{
+  padding:44px 0 36px!important;
+  border-top:1px solid rgba(226,187,101,.18)!important;
+}
+.subpage-link-grid{
+  display:grid!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:12px!important;
+}
+.subpage-link-card{
+  min-height:84px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+  padding:15px 12px!important;
+  border:1px solid rgba(226,187,101,.34)!important;
+  border-radius:18px!important;
+  background:linear-gradient(145deg,rgba(255,241,189,.13),rgba(255,255,255,.045) 42%,rgba(59,11,20,.31))!important;
+  box-shadow:0 18px 42px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.09)!important;
+  color:#fff4d2!important;
+  font-weight:950!important;
+  line-height:1.38!important;
+  letter-spacing:-.02em!important;
+  text-decoration:none!important;
+  border-bottom:1px solid rgba(226,187,101,.34)!important;
+}
+.content-card blockquote{
+  border-left:4px solid var(--gold,#e2bb65)!important;
+  background:linear-gradient(135deg,rgba(226,187,101,.12),rgba(255,255,255,.045))!important;
+  color:#fff1bd!important;
+}
+.content-card table{
+  table-layout:fixed!important;
+  width:100%!important;
+  border-collapse:separate!important;
+  border-spacing:0!important;
+  overflow:hidden!important;
+  border:1px solid rgba(226,187,101,.34)!important;
+  border-radius:18px!important;
+  background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025))!important;
+}
+.content-card th,
+.content-card td{
+  padding:16px 15px!important;
+  vertical-align:top!important;
+  line-height:1.68!important;
+  word-break:keep-all!important;
+}
+.content-card th{
+  color:#fff1bd!important;
+  background:rgba(226,187,101,.10)!important;
+  font-weight:950!important;
+}
+.content-card td{
+  color:#eadcc5!important;
+  font-weight:750!important;
+}
+.content-card td b,
+.content-card th b{
+  display:block!important;
+  margin:0 0 4px!important;
+  color:#fff1bd!important;
+  font-weight:950!important;
+}
+.content-card td small,
+.content-card th small{
+  display:block!important;
+  margin-top:3px!important;
+  color:#cdbda3!important;
+  font-size:12px!important;
+  line-height:1.52!important;
+  font-weight:750!important;
+}
+.social-float-cta{
+  position:fixed!important;
+  right:18px!important;
+  bottom:calc(96px + var(--safe-bottom,0px))!important;
+  top:auto!important;
+  transform:none!important;
+  z-index:86!important;
+  display:flex!important;
+  flex-direction:column!important;
+  gap:9px!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+}
+.social-float-btn,
+.social-float-btn.social-naver,
+.social-float-btn.social-youtube,
+.social-float-btn.social-tiktok,
+.social-float-btn.social-instagram{
+  width:48px!important;
+  height:48px!important;
+  display:grid!important;
+  place-items:center!important;
+  border:1px solid rgba(255,255,255,.42)!important;
+  border-radius:999px!important;
+  background:rgba(255,255,255,.16)!important;
+  color:rgba(255,255,255,.96)!important;
+  box-shadow:0 14px 32px rgba(0,0,0,.30),inset 0 1px 0 rgba(255,255,255,.28)!important;
+  backdrop-filter:blur(14px)!important;
+  -webkit-backdrop-filter:blur(14px)!important;
+  text-decoration:none!important;
+}
+.social-float-btn svg{
+  width:24px!important;
+  height:24px!important;
+  display:block!important;
+  fill:none!important;
+  stroke:currentColor!important;
+  stroke-width:2.2!important;
+  stroke-linecap:round!important;
+  stroke-linejoin:round!important;
+}
+.social-float-btn .svg-fill{fill:currentColor!important;stroke:none!important;}
+.social-float-btn .naver-n{
+  color:#fff!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:21px!important;
+  font-weight:950!important;
+  line-height:1!important;
+  letter-spacing:-.08em!important;
+}
+@media(max-width:760px){.subpage-link-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;}.subpage-link-card{min-height:68px!important;}}
+@media(max-width:560px){.social-float-cta{right:12px!important;bottom:calc(82px + var(--safe-bottom,0px))!important;gap:7px!important;}.social-float-btn,.social-float-btn.social-naver,.social-float-btn.social-youtube,.social-float-btn.social-tiktok,.social-float-btn.social-instagram{width:42px!important;height:42px!important;}.social-float-btn svg{width:21px!important;height:21px!important;}.social-float-btn .naver-n{font-size:19px!important;}.content-card th,.content-card td{padding:12px 10px!important;font-size:13px!important;}.related-pages-head h2,.subpage-shortcuts .section-head h2{font-size:clamp(27px,8vw,38px)!important;}}
+</style></head>
 <body>
 <header class="topbar">
 <div class="wrap topbar-inner">
@@ -891,12 +1300,12 @@ footer{padding:32px 0 44px;color:#9d8b72;text-align:center;border-top:1px solid 
 <div class="hero-copy">
 <h1 id="main-title">압구정 클럽</h1>
 <div aria-label="압구정 클럽 핵심 요약" class="hero-fact-grid">
-<article class="hero-fact-card is-status" data-label="운영"><span class="fact-mark" aria-hidden="true">01</span><p><b>2026.05 기준 운영중</b><br/><em>컬러, 하입, DM, 코드, 코어</em></p></article>
-<article class="hero-fact-card" data-label="연령"><span class="fact-mark" aria-hidden="true">02</span><p>연령대는 20대 후반에서 30대 초중반이 가장 많습니다.</p></article>
-<article class="hero-fact-card" data-label="성비"><span class="fact-mark" aria-hidden="true">03</span><p>클럽 내 성비는 5:5 또는 6:4 정도로 유지합니다.</p></article>
-<article class="hero-fact-card" data-label="테이블"><span class="fact-mark" aria-hidden="true">04</span><p>테이블은 24시간 실시간 낙찰제로 현장 비딩이나 예약이 어렵습니다.</p></article>
-<article class="hero-fact-card" data-label="분위기"><span class="fact-mark" aria-hidden="true">05</span><p>타 지역이나 클럽에 비해 일반인 분들이 많습니다.</p></article>
-<article class="hero-fact-card" data-label="게스트"><span class="fact-mark" aria-hidden="true">06</span><p>남자는 게스트 입장이 어려울 수 있고 여성분들은 무료 입장과 잔술, 빠바틀이 가능합니다.</p></article>
+<article class="hero-fact-card is-status" data-label="운영"><span aria-hidden="true" class="fact-mark">01</span><p><b>2026.05 기준 운영중</b><br/><em>컬러, 하입, DM, 코드, 코어</em></p></article>
+<article class="hero-fact-card" data-label="연령"><span aria-hidden="true" class="fact-mark">02</span><p>연령대는 20대 후반에서 30대 초중반이 가장 많습니다.</p></article>
+<article class="hero-fact-card" data-label="성비"><span aria-hidden="true" class="fact-mark">03</span><p>클럽 내 성비는 5:5 또는 6:4 정도로 유지합니다.</p></article>
+<article class="hero-fact-card" data-label="테이블"><span aria-hidden="true" class="fact-mark">04</span><p>테이블은 24시간 실시간 낙찰제로 현장 비딩이나 예약이 어렵습니다.</p></article>
+<article class="hero-fact-card" data-label="분위기"><span aria-hidden="true" class="fact-mark">05</span><p>타 지역이나 클럽에 비해 일반인 분들이 많습니다.</p></article>
+<article class="hero-fact-card" data-label="게스트"><span aria-hidden="true" class="fact-mark">06</span><p>남자는 게스트 입장이 어려울 수 있고 여성분들은 무료 입장과 잔술, 빠바틀이 가능합니다.</p></article>
 </div>
 </div>
 <div class="hero-media">
@@ -1030,20 +1439,9 @@ footer{padding:32px 0 44px;color:#9d8b72;text-align:center;border-top:1px solid 
 </div>
 </div>
 </section>
+<section aria-label="압구정 클럽 세부 안내" class="subpage-shortcuts" id="related-pages">
 
-<section class="subpage-shortcuts" aria-label="압구정 클럽 세부 안내">
-<div class="wrap">
-<nav class="subpage-link-grid" aria-label="세부 페이지 바로가기">
-<a class="subpage-link-card" href="apgujeong-club-entry-guide" aria-label="압구정 클럽 입뺀 기준 바로가기">압구정 클럽 입뺀 기준</a>
-<a class="subpage-link-card" href="apgujeong-club-guide" aria-label="압구정 클럽 정리 바로가기">압구정 클럽 정리</a>
-<a class="subpage-link-card" href="apgujeong-club-recommendation-2026" aria-label="압구정 클럽 추천 바로가기">압구정 클럽 추천</a>
-<a class="subpage-link-card" href="apgujeong-lounge-club-2026" aria-label="압구정 클럽 바로가기">압구정 클럽</a>
-<a class="subpage-link-card" href="apgujeong-lounge-guide-2026" aria-label="압구정 정리 바로가기">압구정 정리</a>
-<a class="subpage-link-card" href="apgujeong-lounge-table" aria-label="압구정 테이블 바로가기">압구정 테이블</a>
-<a class="subpage-link-card" href="apgujeong-rodeo-club-review" aria-label="압구정 로데오 클럽 후기 바로가기">압구정 로데오 클럽 후기</a>
-</nav>
-</div>
-</section>
+<div class="wrap"><div class="section-head related-pages-head"><p class="eyebrow">RELATED PAGES</p><h2>압구정 클럽 팁 정리</h2></div><nav aria-label="세부 페이지 바로가기" class="subpage-link-grid"><a aria-label="압구정 클럽 라운지 바로가기" class="subpage-link-card" href="apgujeong-club-lounge">압구정 클럽 라운지</a><a aria-label="압구정 클럽 추천 바로가기" class="subpage-link-card" href="apgujeong-club-recommend">압구정 클럽 추천</a><a aria-label="압구정 클럽 입뺀 바로가기" class="subpage-link-card" href="apgujeong-club-entry-denial">압구정 클럽 입뺀</a><a aria-label="압구정 클럽 입장료 바로가기" class="subpage-link-card" href="apgujeong-club-entry-fee">압구정 클럽 입장료</a><a aria-label="압구정 클럽 후기 바로가기" class="subpage-link-card" href="apgujeong-club-review">압구정 클럽 후기</a><a aria-label="압구정 클럽 혼자 바로가기" class="subpage-link-card" href="apgujeong-club-alone">압구정 클럽 혼자</a><a aria-label="압구정 클럽 게스트 바로가기" class="subpage-link-card" href="apgujeong-club-guest">압구정 클럽 게스트</a><a aria-label="압구정 클럽 테이블 바로가기" class="subpage-link-card" href="apgujeong-club-table">압구정 클럽 테이블</a></nav></div></section>
 </main>
 <footer>
 <div class="wrap"><img alt="AP 압구정 로고" height="512" loading="lazy" src="assets/favicon.png" width="512"/><p><b>APGUJEONG LOUNGE &amp; CLUB · 2026.05</b></p><p>압구정 클럽 · 압구정 · 컬러 · 코어 · DM · 코드 · 하입</p><p>담당 매니저 신우 · 010 – 2646 – 0270</p><p>© APGUJEONG LOUNGE &amp; CLUB. All rights reserved.</p></div>
@@ -1051,11 +1449,10 @@ footer{padding:32px 0 44px;color:#9d8b72;text-align:center;border-top:1px solid 
 
 <nav aria-label="소셜 채널 바로가기" class="social-float-cta">
 <a aria-label="네이버 블로그 바로가기" class="social-float-btn social-naver" href="https://blog.naver.com/ssh_official/224298418827" rel="noopener noreferrer" target="_blank"><span aria-hidden="true" class="naver-n">N</span><span class="sr-only">블로그</span></a>
-<a aria-label="유튜브 바로가기" class="social-float-btn social-youtube" href="https://www.youtube.com/@ap_clublounge" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="4.8" y="6.2" width="14.4" height="11.6" rx="3.2"/><path class="svg-fill" d="M10.2 8.9v6.2l5.1-3.1z"/></svg><span class="sr-only">유튜브</span></a>
-<a aria-label="틱톡 바로가기" class="social-float-btn social-tiktok" href="https://www.tiktok.com/@the.seoul.club?_r=1&amp;_t=ZS-96jjA8Eh7Qb" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5v8.2a4.2 4.2 0 1 1-3.05-4.04"/><path d="M14 5c.65 2.65 2.2 4.05 4.65 4.38"/></svg><span class="sr-only">틱톡</span></a>
-<a aria-label="인스타그램 바로가기" class="social-float-btn social-instagram" href="https://www.instagram.com/ap_clublounge?igsh=MXE3MG93OGgwcDY1Mw==" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="4"/><circle cx="12" cy="12" r="3.2"/><circle class="svg-fill" cx="16.5" cy="7.6" r="1.1"/></svg><span class="sr-only">인스타그램</span></a>
-</nav>
-<div aria-label="하단 고정 예약 문의" class="fixed-cta">
+<a aria-label="유튜브 바로가기" class="social-float-btn social-youtube" href="https://www.youtube.com/@ap_clublounge" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="11.6" rx="3.2" width="14.4" x="4.8" y="6.2"></rect><path class="svg-fill" d="M10.2 8.9v6.2l5.1-3.1z"></path></svg><span class="sr-only">유튜브</span></a>
+<a aria-label="틱톡 바로가기" class="social-float-btn social-tiktok" href="https://www.tiktok.com/@the.seoul.club?_r=1&amp;_t=ZS-96jjA8Eh7Qb" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14 5v8.2a4.2 4.2 0 1 1-3.05-4.04"></path><path d="M14 5c.65 2.65 2.2 4.05 4.65 4.38"></path></svg><span class="sr-only">틱톡</span></a>
+<a aria-label="인스타그램 바로가기" class="social-float-btn social-instagram" href="https://www.instagram.com/ap_clublounge?igsh=MXE3MG93OGgwcDY1Mw==" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="14" rx="4" width="14" x="5" y="5"></rect><circle cx="12" cy="12" r="3.2"></circle><circle class="svg-fill" cx="16.5" cy="7.6" r="1.1"></circle></svg><span class="sr-only">인스타그램</span></a>
+</nav><div aria-label="하단 고정 예약 문의" class="fixed-cta">
 <div class="fixed-cta-inner">
 <a aria-label="압구정 카카오톡 문의" class="kakao" href="https://open.kakao.com/o/sU6GYIwi" rel="noopener" target="_blank"><span aria-hidden="true">K</span><span class="cta-label">카카오톡 문의<small>담당 매니저 신우</small></span></a>
 <a aria-label="압구정 문자 문의" class="sms" href="sms:01026460270?body=%EC%95%95%EA%B5%AC%EC%A0%95%20%ED%81%B4%EB%9F%BD%20%EB%9D%BC%EC%9A%B4%EC%A7%80%20%EC%98%88%EC%95%BD%20%EB%AC%B8%EC%9D%98%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4."><span aria-hidden="true">✉</span><span class="cta-label">문자 문의<small>010 – 2646 – 0270</small></span></a>
