@@ -1,29 +1,10 @@
 # robots.txt — https://apgujeonglounge.kr/
-# Public SEO crawl policy for Google, Naver, and other compliant search crawlers.
-# Upload this file to the site root: https://apgujeonglounge.kr/robots.txt
+# Public crawl policy. Upload this file to the site root: https://apgujeonglounge.kr/robots.txt
 
 User-agent: *
 Allow: /
-Disallow: /README.md
-Disallow: /README.txt
-
-User-agent: Googlebot
-Allow: /
-Disallow: /README.md
-Disallow: /README.txt
-
-User-agent: Googlebot-Image
-Allow: /
-Allow: /assets/
-Disallow: /README.md
-Disallow: /README.txt
 
 User-agent: Yeti
 Allow: /
-Allow: /assets/
-Disallow: /README.md
-Disallow: /README.txt
 
 Sitemap: https://apgujeonglounge.kr/sitemap.xml
-Sitemap: https://apgujeonglounge.kr/rss.xml
-Sitemap: https://apgujeonglounge.kr/feed.xml
