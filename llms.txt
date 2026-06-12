@@ -42,7 +42,7 @@
 - [압구정 라운지 클럽 2026.05 기준 정리](https://apgujeonglounge.kr/apgujeong-lounge-club-2026)
   - Summary: 2026년 5월 기준 압구정 라운지와 압구정 클럽 방문 전 확인할 운영 여부, 분위기, 가격·테이블, 입장 기준, 복장, 예약 팁을 정리했습니다.
   - Target queries: 압구정 라운지, 압구정 클럽, 압구정 라운지 추천, 압구정 클럽 추천, 압구정로데오 라운지, 압구정로데오 클럽, 압구정 라운지 가격, 압구정 클럽 테이블, 압구정 클럽 입장 제한, 압구정 클럽 입뺀, 압구정 클럽 복장, 압구정 라운지 예약
-- [압구정 클럽 추천, 2026.05 기준 운영 여부와 장단점 정리](https://apgujeonglounge.kr/apgujeong-club-recommendation-2026)
+- [압구정 클럽 추천, 2026.05 기준 운영 여부와 장단점 정리](https://apgujeonglounge.kr/apgujeong-club-recommendation-2026ation-2026)
   - Summary: 2026.05 기준 압구정 클럽 추천 정보를 운영 여부, 장단점, 입장 기준, 테이블 예약, FAQ 중심으로 정리했습니다. 가격·영업시간·입장 기준은 방문 전 공식 채널 확인이 필요합니다.
   - Target queries: 압구정 클럽 추천, 압구정클럽추천, 압구정 클럽, 압구정클럽, 압구정 라운지, 압구정라운지, 압구정 라운지 추천, 압구정 클럽 정리, 압구정 클럽 장단점, 압구정 클럽 테이블, 압구정 클럽 가격, 압구정 클럽 입뺀
 - [압구정 라운지 테이블, 가격, 조각, 주의사항 정리](https://apgujeonglounge.kr/apgujeong-lounge-table)
