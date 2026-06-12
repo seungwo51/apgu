@@ -64,5 +64,7 @@ Disallow: /
 User-agent: CCBot
 Disallow: /
 
+#DaumWebMasterTool:44b06f5622dc339b49fdddc5fdb372737a5e58187886a7ceb77b35e5220946d0:Ep8513W5iGGcFwzgRgXT/Q==
+
 # Sitemap
 Sitemap: https://apgujeonglounge.kr/sitemap.xml
